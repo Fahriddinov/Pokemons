@@ -4676,17 +4676,16 @@ sort.addEventListener('input', () => {
 	let wrapper = document.querySelector('.cards')
 	wrapper.innerHTML = ''
 
-	if (sort.value === 'Number') {
+	if (sort.value === 'Ascendent') {
 		let filter = pokemons.sort((a, b) => a.num > b.num ? 1 : -1)
+		RenderCard(filter)
+	} else if (sort.value === 'Descendent') {
+		let filter = pokemons.sort((a, b) => a.num < b.num ? 1 : -1)
 		RenderCard(filter)
 	} else if (sort.value === 'Spawn time') {
 		let filter = pokemons.sort((a, b) => a.spawn_time > b.spawn_time ? 1 : -1)
 		RenderCard(filter)
-	} else if (sort.value === 'Weight') {
-		let filter = pokemons.sort((a, b) => a.weight > b.weight ? 1 : -1)
-		RenderCard(filter)
-	} else if (sort.value === 'Candy') {
-		let filter = pokemons.sort((a, b) => a.candy_count > b.candy_count ? 1 : -1)
-		RenderCard(filter)
+	} else {
+		RenderCard(pokemons)
 	}
 })
