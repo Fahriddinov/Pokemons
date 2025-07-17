@@ -4679,7 +4679,7 @@ sort.addEventListener('input', () => {
 	if (sort.value === 'Number') {
 		let filter = pokemons.sort((a, b) => a.num > b.num ? 1 : -1)
 		RenderCard(filter)
-	} else if (sort.value === 'Time') {
+	} else if (sort.value === 'Spawn time') {
 		let filter = pokemons.sort((a, b) => a.spawn_time > b.spawn_time ? 1 : -1)
 		RenderCard(filter)
 	} else if (sort.value === 'Weight') {
