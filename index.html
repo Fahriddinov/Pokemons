@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png"
+        alt="Pokemon Logo"
+        class="logo"
+      />
+
+      <div class="search-area">
+        <input class="searchP" type="text" placeholder="Search your pokemon" />
+
+        <select class="options">
+          <option>All</option>
+          <option>Grass</option>
+          <option>Fire</option>
+          <option>Water</option>
+          <option>Electric</option>
+          <option>Normal</option>
+          <option>Fighting</option>
+          <option>Flying</option>
+          <option>Ground</option>
+          <option>Poison</option>
+          <option>Rock</option>
+          <option>Bug</option>
+          <option>Ghost</option>
+          <option>Psychic</option>
+          <option>Ice</option>
+          <option>Dragon</option>
+        </select>
+
+        <select class="sort">
+          <option>Number</option>
+          <option>Time</option>
+          <option>Weight</option>
+          <option>Candy</option>
+        </select>
+        <button class="seach">search</button>
+      </div>
+
+      <div class="cards"></div>
+    </div>
+
+    <script src="./pokemons.js"></script>
+  </body>
+</html>
