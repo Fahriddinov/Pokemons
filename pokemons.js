@@ -4654,7 +4654,7 @@ function RenderCard(card) {
 }
 RenderCard(pokemons)
 
-seach.addEventListener('click', () => {
+searchP.addEventListener('input', () => {
 	let wrapper = document.querySelector('.cards')
 	wrapper.innerHTML = ''
 	let filter = pokemons.filter(elem => elem.name.toLowerCase().includes(searchP.value.toLowerCase()))
